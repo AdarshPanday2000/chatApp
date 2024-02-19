@@ -31,7 +31,6 @@ function Chats () {
 
   return (
     <>
-    <div className=' flex justify-center font-bold text-gray-200 p-4 hover:bg-[#2f2d52]'>ChadGpt</div>
     <div>
       {/* convert the received chats objects in array..at index 0 we get uid & at index 1 we get more information */}
       {Object.entries(chats)?.sort((a,b) => b[1].date - a[1].date).map((chat) => (
